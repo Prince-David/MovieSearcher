@@ -2,3 +2,10 @@ Constants.swift
 .DS_Store
 
 MovieSearcher.xcodeproj/project.xcworkspace/xcuserdata/david.xcuserdatad/
+
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
