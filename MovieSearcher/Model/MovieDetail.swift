@@ -15,6 +15,7 @@ struct MovieDetail : Codable {
     let runtime: String
     let plot: String
     let poster: String
+    let metaScore: String
     
     enum CodingKeys: String, CodingKey {
         case title = "Title"
@@ -23,6 +24,7 @@ struct MovieDetail : Codable {
         case runtime = "Runtime"
         case plot = "Plot"
         case poster = "Poster"
+        case metaScore = "Metascore"
     }
     
 }
