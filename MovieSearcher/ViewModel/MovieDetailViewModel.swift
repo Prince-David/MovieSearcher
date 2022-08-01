@@ -11,11 +11,8 @@ class MovieDetailViewModel {
     var details : MovieDetail?
     var detailsLoaded: ((MovieDetail?, Bool) -> Void)?
     
-    init() {
-        callService()
-    }
-    
-    func callService() {
+    func callService(title: String) {
+        DataManager.shared.movieTitle = title
         DataManager.shared.searchMovieTitle {
             [weak self] response in
                 self?.details = response
@@ -23,7 +20,6 @@ class MovieDetailViewModel {
         } fail: { [weak self] _ in
             self?.handleResponse(response: nil, success: false)
         }
-        
     }
     
     private func handleResponse(response: MovieDetail?, success: Bool) {

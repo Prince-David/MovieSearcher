@@ -10,6 +10,8 @@ import UIKit
 class SearchViewController: UIViewController {
 
     private var viewModel = MovieDetailViewModel()
+    @IBOutlet weak var textTitle: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel.detailsLoaded = { [weak self] (_, success) in
@@ -21,6 +23,9 @@ class SearchViewController: UIViewController {
         }
     }
 
-
+    @IBAction func tapSearch(_ sender: Any) {
+        viewModel.callService(title: textTitle.text ?? "Star" )
+    }
+    
 }
 
