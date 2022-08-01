@@ -23,6 +23,7 @@
 		63C1B969289731C100BA117E /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B968289731C100BA117E /* HTTPError.swift */; };
 		63C1B96B289731DE00BA117E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B96A289731DE00BA117E /* HTTPMethod.swift */; };
 		63C1B96D2897327700BA117E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B96C2897327700BA117E /* ServiceManager.swift */; };
+		63C1B96F28976AE300BA117E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B96E28976AE300BA117E /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		63C1B968289731C100BA117E /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		63C1B96A289731DE00BA117E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		63C1B96C2897327700BA117E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		63C1B96E28976AE300BA117E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				6305427E2895E57B00D8E080 /* SearchViewController.swift */,
+				63C1B96E28976AE300BA117E /* MovieDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				6305427D2895E57B00D8E080 /* SceneDelegate.swift in Sources */,
 				63C1B96528972C7400BA117E /* MovieDetailViewModel.swift in Sources */,
 				63C1B95B2896A64500BA117E /* Constants.swift in Sources */,
+				63C1B96F28976AE300BA117E /* MovieDetailViewController.swift in Sources */,
 				63C1B96D2897327700BA117E /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

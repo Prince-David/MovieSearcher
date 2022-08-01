@@ -17,6 +17,10 @@ class SearchViewController: UIViewController {
         self.viewModel.detailsLoaded = { [weak self] (_, success) in
             if success {
                 print(self?.viewModel.details ?? "none")
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "detailView") as! MovieDetailViewController
+                vc.viewModel = self?.viewModel
+                self?.navigationController?.pushViewController(vc, animated: true)
             } else {
 
             }
