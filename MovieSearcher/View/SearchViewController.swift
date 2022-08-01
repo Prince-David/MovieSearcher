@@ -28,7 +28,10 @@ class SearchViewController: UIViewController {
     }
 
     @IBAction func tapSearch(_ sender: Any) {
-        viewModel.callService(title: textTitle.text ?? "Star" )
+        if let title = textTitle.text {
+            let titleSearchString = title.replacingOccurrences(of: " ", with: "%20")
+            viewModel.callService(title: titleSearchString )
+        }
     }
     
 }
