@@ -12,8 +12,13 @@ class SearchViewController: UIViewController {
     private var viewModel = MovieDetailViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print(apiKey)
+        self.viewModel.detailsLoaded = { [weak self] (_, success) in
+            if success {
+                print(self?.viewModel.details ?? "none")
+            } else {
+
+            }
+        }
     }
 
 
