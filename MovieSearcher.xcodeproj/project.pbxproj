@@ -119,12 +119,10 @@
 				63C1B960289729AB00BA117E /* Model */,
 				63C1B962289729C200BA117E /* View */,
 				63C1B961289729B600BA117E /* ViewModel */,
-				6305427A2895E57B00D8E080 /* AppDelegate.swift */,
 				63C1B9662897316C00BA117E /* Managers */,
 				6305427C2895E57B00D8E080 /* SceneDelegate.swift */,
-				630542802895E57B00D8E080 /* Main.storyboard */,
+				6305427A2895E57B00D8E080 /* AppDelegate.swift */,
 				630542832895E58000D8E080 /* Assets.xcassets */,
-				630542852895E58000D8E080 /* LaunchScreen.storyboard */,
 				630542882895E58000D8E080 /* Info.plist */,
 			);
 			path = MovieSearcher;
@@ -166,6 +164,8 @@
 		63C1B962289729C200BA117E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				630542802895E57B00D8E080 /* Main.storyboard */,
+				630542852895E58000D8E080 /* LaunchScreen.storyboard */,
 				6305427E2895E57B00D8E080 /* SearchViewController.swift */,
 				63C1B96E28976AE300BA117E /* MovieDetailViewController.swift */,
 			);
