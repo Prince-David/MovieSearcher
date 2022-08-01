@@ -77,12 +77,21 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synopsis" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aja-5c-F9c">
+                                                <rect key="frame" x="10" y="41" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Rfl-2k-Hrf" firstAttribute="top" secondItem="PPa-Qb-OAK" secondAttribute="top" constant="8" id="BlU-19-Ygn"/>
+                                            <constraint firstAttribute="trailing" secondItem="aja-5c-F9c" secondAttribute="trailing" constant="10" id="Cpm-mO-h7o"/>
+                                            <constraint firstItem="aja-5c-F9c" firstAttribute="leading" secondItem="PPa-Qb-OAK" secondAttribute="leading" constant="10" id="OSv-pI-Jh0"/>
                                             <constraint firstAttribute="trailing" secondItem="Rfl-2k-Hrf" secondAttribute="trailing" constant="20" id="U3N-ml-FaS"/>
                                             <constraint firstItem="Rfl-2k-Hrf" firstAttribute="leading" secondItem="PPa-Qb-OAK" secondAttribute="leading" constant="20" id="WFm-kh-IYq"/>
+                                            <constraint firstItem="aja-5c-F9c" firstAttribute="top" secondItem="Rfl-2k-Hrf" secondAttribute="bottom" constant="10" id="gPW-FI-zZM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -95,6 +104,8 @@
                                     <constraint firstAttribute="bottom" secondItem="PPa-Qb-OAK" secondAttribute="bottom" id="pA9-Qe-IUi"/>
                                     <constraint firstItem="PPa-Qb-OAK" firstAttribute="centerX" secondItem="Whn-4g-wzA" secondAttribute="centerX" id="pg1-65-Per"/>
                                 </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hMD-2l-Ifl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SoB-ge-Oxe"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bqv-3z-bdY"/>
@@ -107,6 +118,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblSynopsis" destination="aja-5c-F9c" id="e0Q-9b-H8G"/>
                         <outlet property="lblTitle" destination="Rfl-2k-Hrf" id="Vtz-Th-769"/>
                     </connections>
                 </viewController>
