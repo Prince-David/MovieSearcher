@@ -37,8 +37,13 @@ class MovieDetailViewController: UIViewController {
         guard let url = URL(string: posterURL) else {
             return
         }
-        if let data = try? Data(contentsOf: url) {
-            imgPoster.image = UIImage(data: data)
+        
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    self.imgPoster.image = UIImage(data: data)
+                }
+            }
         }
     }
 }
